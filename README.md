@@ -4,17 +4,16 @@
 
 <h1>Data Migration Factory</h1>
 
-<p><strong>The Industrial-Grade Platform for Automated, Governed, and Low-Downtime Data Modernization at Global Scale</strong></p>
+<p><strong>The Institutional-Grade Platform for Standardized Data Modernization Foundations, Migration Governance, and Multi-Cloud Modernization Ecosystems.</strong></p>
 
-[![Migration: Industrial--Scale](https://img.shields.io/badge/Migration-Industrial--Scale-blue.svg?style=for-the-badge&labelColor=000000)]()
-[![Status: Production--Ready](https://img.shields.io/badge/Status-Production--Ready-indigo.svg?style=for-the-badge&labelColor=000000)]()
-[![Modernization: Cloud--Native](https://img.shields.io/badge/Modernization-Cloud--Native-green.svg?style=for-the-badge&labelColor=000000)]()
-[![Strategy: Wave--Based](https://img.shields.io/badge/Strategy-Wave--Based-ff69b4?style=for-the-badge&labelColor=000000)]()
+[![Standard: Migration-Excellence](https://img.shields.io/badge/Standard-Migration--Excellence-blue.svg?style=for-the-badge&labelColor=000000)]()
+[![Status: Production--Ready](https://img.shields.io/badge/Status-Production--Ready-emerald.svg?style=for-the-badge&labelColor=000000)]()
+[![Focus: Secure--Modernization--Orchestration](https://img.shields.io/badge/Focus-Secure--Modernization--Orchestration-indigo.svg?style=for-the-badge&labelColor=000000)]()
 
 <br/>
 
-> **"De-risking the journey to the cloud through industrialized automation."** 
-> Data Migration Factory is a flagship platform designed to enable enterprises to assess, plan, and execute large-scale migrations across Azure, AWS, and GCP with surgical precision.
+> **"Industrializing data modernization to automate migration foundations."** 
+> **Data Migration Factory** is an enterprise-grade platform designed to provide a secure, measurable, and highly automated foundation for global data modernization operations. It orchestrates the complex lifecycle of migrations—from source discovery and schema conversion to high-throughput data sync and unified cutover auditing.
 
 </div>
 
@@ -22,690 +21,263 @@
 
 ## 🏛️ Executive Summary
 
-**Data Migration Factory** is a flagship platform foundation designed for CIOs, CTOs, and Transformation Leaders. Migrating petabyte-scale data estates is notoriously complex, prone to downtime, and often fails due to a lack of automated validation and wave governance.
+Fragmented legacy data estates and manual migration workflows are strategic operational liabilities; lack of centralized migration orchestration is a primary barrier to organizational cloud maturity. Organizations fail to maintain a high-performing modernization culture not because of a lack of tools, but because of fragmented migration standards, lack of automated validation, and an inability to orchestrate modernization planes with operational precision.
 
-This platform delivers a complete **Data Migration Operating Model**, providing modular **Automation Engines**, **Connectors** for legacy and modern targets, **Infrastructure as Code (Terraform)**, and a **Control Plane** for orchestrating complex cutover sequences. It standardizes the migration of **SQL Server**, **Oracle**, **Snowflake**, **Databricks**, and **File Shares**, ensuring every wave is executed with near-zero downtime and 100% data reconciliation.
-
----
-
-## 💡 Why Data Migration Matters
-
-Data is the lifeblood of the modern enterprise, but legacy debt traps that value in aging, expensive systems.
-- **Cost Reduction**: Exiting expensive on-premises data centers and legacy licensing models.
-- **Agility**: Moving data into cloud-native lakehouses for faster AI/ML experimentation.
-- **Compliance**: Leveraging modern governance controls (PII labeling, auditability) in the cloud.
-- **Risk Mitigation**: Replacing end-of-life hardware and software with resilient, managed services.
+This platform provides the **Migration Intelligence Plane**. It implements a complete **Data-Migration-Factory-as-Code Framework**, enabling Transformation Leaders and Migration teams to manage global modernization foundations as first-class citizens. By automating the identification of migration bottlenecks through real-time telemetry analysis and orchestrating the provisioning of secure performance-driven migration policies, we ensure that every organizational asset—from legacy SQL clusters to distributed file shares—is migrated by default, audited for history, and strictly aligned with institutional modernization frameworks.
 
 ---
 
-## 🚀 Business Outcomes
+## 📐 Architecture Storytelling: Principal Reference Models
 
-### 🎯 Industrialized Migration Impact
-- **70% Faster Migration Cycles**: Standardized templates and automation for repetitive tasks.
-- **99.9% Migration Success Rate**: Automated checksum validation and query parity testing.
-- **Near-Zero Business Downtime**: Leveraging CDC and incremental sync for seamless cutovers.
-- **Consolidated Governance**: Centralized tracking of every database and file moved to the cloud.
-
----
-
-## 🏭 The Migration Factory Model
-
-A "Migration Factory" is a highly repeatable process that treats migration as an assembly line.
-1. **Discovery & Assessment**: Identifying every asset and its dependencies.
-2. **Analysis & Strategy**: Categorizing as Rehost, Replatform, or Modernize.
-3. **Execution & Automation**: Using the Factory Engine to move data and schemas.
-4. **Validation & Cutover**: Ensuring data integrity and switching the traffic.
-5. **Hypercare & Transition**: Providing post-migration support before moving to steady-state.
-
----
-
-## 🏗️ Technical Stack
-
-| Layer | Technology | Rationale |
-|---|---|---|
-| **IaC Foundation** | Terraform | Multi-cloud provisioning for migration bridges and targets. |
-| **Automation Engine** | Python / FastAPI | Orchestrating complex migration workflows and logic. |
-| **Frontend** | React 18, Vite | Premium portal for wave planning and cutover monitoring. |
-| **Database** | PostgreSQL | Centralized repository for migration state and metadata. |
-| **Queue** | Redis | Managing high-concurrency migration tasks and status. |
-| **Monitoring** | Prometheus / Grafana | Real-time tracking of migration throughput and errors. |
-
----
-
-## 📐 Architecture Storytelling: 60+ Diagrams
-
-### 1. Executive High-Level Architecture
-The end-to-end flow from legacy source to cloud-native target.
-
-```mermaid
-graph TD
-    Source[Legacy: SQL / Oracle / Files] --> Assess[Assessment & Discovery]
-    Assess --> Factory[Migration Factory Engine]
-    Factory --> Target[Cloud: Snowflake / Databricks / Fabric]
-    Target --> Govern[Governance & Quality Hub]
-    Govern --> Dashboard[Executive Migration Dashboard]
-```
-
-### 2. Detailed Component Topology
-The internal service boundaries and management layers of the factory.
+### 1. Principal Architecture: Global Data Migration Factory & Migration Intelligence Plane
+This diagram illustrates the end-to-end flow from source telemetry ingestion and multi-cloud orchestration to migration enforcement, performance validation, and institutional modernization auditing.
 
 ```mermaid
 graph LR
-    subgraph "Control Plane"
-        Portal[Migration UI]
-        API[Migration API]
-        Metadata[(Migration Metadata)]
+    %% Subgraph Definitions
+    subgraph SourceIngress["Legacy Estate & Metadata Ingress"]
+        direction TB
+        Databases["SQL / Oracle / DB2 Clusters"]
+        Unstructured["SMB Shares / HDFS / S3"]
+        ETL_Logic["SSIS / Informatica / Procedures"]
     end
-    subgraph "Execution Layer"
-        Worker[Provisioning Worker]
-        Sync[Data Sync Engine]
-        Val[Validation Engine]
+
+    subgraph IntelligenceEngine["Migration Intelligence Hub"]
+        direction TB
+        API["FastAPI Migration Gateway"]
+        MigrationOrchestrator["Global Wave & Cutover Hub"]
+        Governance_Hub["Compliance & Guardrail Hub"]
+        AIOps_Validator["Risk & Anomaly Analysis Hub"]
     end
-    Portal --> API
-    API --> Metadata
-    API --> Worker
-```
 
-### 3. Frontend to Backend Request Path
-Tracing a "Run Migration Job" request through the platform.
+    subgraph OperationsPlane["Distributed Modernization Ecosystem"]
+        direction TB
+        MigrationBridges["Managed Migration Ingress Bridges"]
+        ActivePipelines["Managed Automated Sync Pipelines"]
+        TargetSinks["Managed Infrastructure Target Hubs"]
+    end
 
-```mermaid
-sequenceDiagram
-    participant PM as Migration Lead
-    participant W as React UI
-    participant A as FastAPI
-    participant Q as Redis Queue
-    participant E as Migration Engine
+    subgraph OperationsHub["Institutional Modernization Hub"]
+        direction TB
+        Scorecard["Migration Maturity Scorecard"]
+        Analytics["Modernization Flow & Cutover Stats"]
+        Audit["Forensic Migration Metadata Lake"]
+    end
+
+    subgraph DevOps["Data-Migration-Factory-as-Code Framework"]
+        direction TB
+        TF["Terraform Migration Modules"]
+        DriftBot["Readiness & Config Drift Validator"]
+        ChatOps["Migration Operations Hub"]
+    end
+
+    %% Flow Arrows
+    SourceIngress -->|1. Submit Discovery| API
+    API -->|2. Orchestrate Migration| MigrationOrchestrator
+    MigrationOrchestrator -->|3. Apply Security Guard| Governance_Hub
+    Governance_Hub -->|4. Assess Drift| AIOps_Validator
     
-    PM->>W: Click "Start Migration: Wave 1"
-    W->>A: POST /migrations/run
-    A->>Q: Enqueue Migration Job
-    Q-->>E: Pick up Job: Job_123
-    E-->>A: Status: Provisioning Source Bridge...
-    A-->>W: Render Progress Stepper
+    AIOps_Validator -->|5. Execute Sync| OperationsPlane
+    OperationsPlane -->|6. Notify Status| ChatOps
+    API -->|7. Visualize Health| Scorecard
+    
+    Scorecard -->|8. Track Maturity| Analytics
+    Scorecard -->|9. Record Performance| Audit
+    
+    TF -->|10. Provision Backbone| IntelligenceEngine
+    DriftBot -->|11. Inject Cutover Risk| MigrationOrchestrator
+    Audit -->|12. Improve Operations| MigrationBridges
+
+    %% Styling
+    classDef ingress fill:#f5f5f5,stroke:#616161,stroke-width:2px;
+    classDef intel fill:#e8eaf6,stroke:#1a237e,stroke-width:2px;
+    classDef operations fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
+    classDef ops fill:#ede7f6,stroke:#311b92,stroke-width:2px;
+    classDef devops fill:#e8f5e9,stroke:#1b5e20,stroke-width:2px;
+
+    class SourceIngress ingress;
+    class IntelligenceEngine intel;
+    class OperationsPlane operations;
+    class OperationsHub ops;
+    class DevOps devops;
 ```
 
-### 4. Migration Control Plane
-Centralized orchestration for multi-cloud migration activities.
+### 2. The Migration Lifecycle Flow
+The continuous path of a data migration platform from initial integration (discovery) and aggregation (readiness) to active analysis (risk), optimization (sync), and institutional forensic auditing (scorecard).
+
+```mermaid
+graph LR
+    Integrate["Integrate (Source)"] --> Aggregate["Aggregate (Readiness)"]
+    Aggregate --> Analyze["Analyze (Risk)"]
+    Analyze --> Optimize["Optimize (Sync)"]
+    Optimize --> Report["Report & Scorecard"]
+```
+
+### 3. Distributed Migration Telemetry Topology
+Strategically orchestrating standardized migration across global data centers, diverse legacy sites, and multi-cloud targets, providing a unified institutional view of global modernization health and operational readiness.
+
+```mermaid
+graph LR
+    RegionA["Edge: US West (Primary) Source"] -->|Sync| Hub["Unified Migration Hub"]
+    BU["Hub: EU Central (Secondary) Hub"] -->|Sync| Hub
+    Cloud["Site: Multi-Cloud (Azure/AWS) Targets"] -->|Sync| Hub
+    Hub --- Logic["Global Migration Engine"]
+```
+
+### 4. Migration Governance & High-Trust Data Plane Protection Flow
+Executing complex logic for securing the bridge between legacy systems and modern targets, ensuring every organizational identity is verified, data-at-rest is encrypted, and every migration access is according to institutional standards.
 
 ```mermaid
 graph TD
-    Hub[Platform Control Plane] --> Azure[Azure Ingestion Bridge]
-    Hub --> AWS[AWS Transfer Hub]
-    Hub --> GCP[GCP Data Transfer]
-    Azure --> SQL[SQL Target]
+    MigrationData["Usage: Schema & Sync Data"] --> Bridge["Rule: Guardrail Hub"]
+    Bridge --> PolicyMap["Rule: Security & Policy Map"]
+    PolicyMap -->|Evaluate| Context["PATH: Global Migration View"]
+    Context --- Estimate["Modernization Integrity Score"]
 ```
 
-### 5. Multi-Cloud Target Topology
-Standardizing the migration targets across major clouds.
+### 5. Multi-Region Migration Federation & Governance Flow
+Automatically managing unified modernization standards across global regions and diverse business units, ensuring institutional data residency and security boundaries by default.
 
 ```mermaid
 graph LR
-    User[Cloud Architects] --> Portal[Factory Portal]
-    Portal --> Target_AZ[Azure Synapse / Fabric]
-    Portal --> Target_AWS[AWS Redshift / Snowflake]
-    Portal --> Target_GCP[GCP BigQuery]
+    Org["Global Modernization System"] -->|Apply| Guard["Governance Isolation Hub"]
+    Guard -->|Violate| Alert["Sync Latency Alert"]
+    Guard -->|Pass| Verify["Status: Governed Migration"]
+    Verify --- Audit["Isolation Compliance Log"]
 ```
 
-### 6. Regional Deployment Model
-Localizing migration infrastructure for latency and sovereignty.
+### 6. Encryption & Perimeter Protection Flow (Migration Standard)
+Managing the lifecycle of a synchronization request, automatically enforcing institutional TLS 1.3 and resource encryption standards as required by security policy, ensuring zero-latency security confidence.
+
+```mermaid
+graph LR
+    MigrationReq["Cutover Access Query"] -->|Check| Gatekeeper["Modernization Protection Bot"]
+    Gatekeeper -->|Verify| TLS["TLS 1.3 & Resource Encryption Check"]
+    TLS -->|Pass| Admit["Status: Secure Migration Traffic"]
+    Admit --- Audit["Security Compliance Log"]
+```
+
+### 7. Institutional Migration Maturity Scorecard
+Grading organizational performance based on key indicators: Cutover Success Rate, Schema Compatibility Index, and Zero-Downtime Adoption Scores.
 
 ```mermaid
 graph TD
-    subgraph "Primary Region"
-        Ingest[Ingestion Worker]
-        Storage[(Target Storage)]
-    end
-    subgraph "Legacy Site"
-        Bridge[VPN / ExpressRoute]
-        Extract[Extractor Agent]
-    end
-    Extract --> Bridge
-    Bridge --> Ingest
+    Post["Migration Health: 99%"] --> Risk["Delivery Gap: 1%"]
+    Post --- C1["Success Rate (100%)"]
+    Post --- C2["Modernization Adoption (98%)"]
 ```
 
-### 7. DR Failover Model
-Ensuring migration continuity during platform outages.
-
-```mermaid
-graph LR
-    Primary[Active Controller] -->|Sync State| Standby[Standby Controller]
-    Standby -->|Health Check| Primary
-    Primary --> Failover{Controller Down?}
-    Failover -->|Yes| Standby
-```
-
-### 8. API Gateway Architecture
-Securing the entry point for migration orchestration.
+### 8. Identity & RBAC for Migration Governance
+Managing fine-grained access to migration hubs, provisioning workers, and audit logs between CTOs, Migration Managers, and Engineers.
 
 ```mermaid
 graph TD
-    Req[Incoming Migration Request] --> Auth[OIDC / Entra ID]
-    Auth --> WAF[Web App Firewall]
-    WAF --> Router[Path Router]
+    CTO["CTO"] --> Hub["Manage Organization rules"]
+    Manager["Migration Manager"] --> Exec["Execute wave syncs"]
+    Engineer["Engineer"] --> Audit["Verify Sync Proofs"]
 ```
 
-### 9. Queue Worker Architecture
-Managing long-running migration and validation tasks.
+### 9. IaC Deployment: Data-Migration-Factory-as-Code Framework
+Using modular Terraform to deploy and manage the versioned distribution of the migration tracking hubs, sync protection workers, and forensic metadata lakes.
 
 ```mermaid
 graph LR
-    Job[Move Table: Orders] --> Redis[Redis Job Queue]
-    Redis --> W1[Worker Alpha: Bulk Load]
-    Redis --> W2[Worker Beta: Row Validation]
-    W1 --> Result[Update Migration State]
+    HCL["Infrastructure Code"] --> TF["Terraform Apply"]
+    TF --> Engine["Modernization Control Plane"]
+    Engine --> Clusters["HA Validation Fleet"]
 ```
 
-### 10. Dashboard Analytics Flow
-How raw migration signals become executive migration scorecards.
-
-```mermaid
-graph TD
-    Raw[Engine Logs / CloudWatch] --> Parser[Findings Parser]
-    Parser --> Scorer[Maturity / SLA Scorer]
-    Scorer --> Dashboard[Executive UI]
-```
-
-### 11. Source Inventory Workflow
-Automated scanning of the legacy estate.
+### 10. AIOps Migration Drift & Risk Validation Flow
+Using advanced analytics to identify sudden surges in sync latency, unauthorized schema changes, suspicious configuration drifts, or unusual cutover pattern changes that could result in institutional risk or data loss.
 
 ```mermaid
 graph LR
-    Scanner[Agentless Scanner] --> SQL[SQL Server]
-    Scanner --> Oracle[Oracle]
-    Scanner --> Files[SMB Shares]
+    Drift["Modernization Change Event"] --> Analyzer["Drift Detection Bot"]
+    Analyzer -->|Anomaly| Alert["Migration Integrity Alert"]
+    Analyzer -->|Normal| Pass["Status Optimal"]
 ```
 
-### 12. Dependency Discovery Model
-Mapping application-to-database relationships.
-
-```mermaid
-graph TD
-    App[Web App] --> DB[Primary DB]
-    DB --> Replica[Read Replica]
-    DB --> Warehouse[Data Warehouse]
-```
-
-### 13. Application to Database Mapping
-Visualizing the business impact of a migration unit.
+### 11. Metadata Lake for Forensic Migration Audit
+Storing long-term records of every source integration event (metadata), every cutover executed, and every schema version history for institutional record-keeping, compliance auditing, and post-provisioning forensics.
 
 ```mermaid
 graph LR
-    Finance[Finance BU] --> ERP[ERP App]
-    ERP --> Oracle[(Oracle Cluster)]
-```
-
-### 14. Data Classification Pre-check
-Identifying PII/PHI before movement.
-
-```mermaid
-graph TD
-    Scan[PII Scanner] --> Label[Apply Sensitivity Tag]
-    Label --> Plan[Migration Encryption Plan]
-```
-
-### 15. Readiness Scoring Flow
-Quantifying the ease of migration for a source.
-
-```mermaid
-graph LR
-    Stats[Compatibility / Size] --> Scorer[Readiness Index]
-    Scorer --> Decision[Green / Yellow / Red]
-```
-
-### 16. Target Platform Recommendation
-Logic-based mapping of source to modern target.
-
-```mermaid
-graph TD
-    SQL[Legacy SQL] --> Check[Version / Size]
-    Check -->|Small| AzureSQL[Azure SQL DB]
-    Check -->|Large| Fabric[Microsoft Fabric]
-```
-
-### 17. TCO Comparison Workflow
-Analyzing the financial benefit of migration.
-
-```mermaid
-graph LR
-    Legacy[On-Prem Cost] --> Compare[TCO Calculator]
-    Compare --> Cloud[Estimated Cloud Run Rate]
-```
-
-### 18. Risk Heatmap Generation
-Visualizing migration danger zones.
-
-```mermaid
-graph TD
-    Complexity[High Complexity] --> Risk[Red Zone]
-    Uptime[Low Downtime Tolerance] --> Risk
-```
-
-### 19. Wave Grouping Model
-Bundling assets for migration efficiency.
-
-```mermaid
-graph LR
-    Wave1[Foundational Assets] --> Wave2[Low Complexity]
-    Wave2 --> Wave3[Mission Critical]
-```
-
-### 20. Stakeholder Approval Flow
-Governing the "Go/No-Go" decision for a wave.
-
-```mermaid
-graph TD
-    Exec[Executive Board] --> Signoff[Approved for Wave 1]
-```
-
-### 21. Schema Conversion Lifecycle
-Automated translation of legacy DDL to cloud-native.
-
-```mermaid
-graph LR
-    T_SQL[T-SQL] --> Converter[SCT Engine]
-    Converter --> PL_PGSQL[PL/pgSQL]
-```
-
-### 22. Full Load Migration Flow
-Executing the initial bulk data movement.
-
-```mermaid
-graph TD
-    Source[Legacy DB] --> BCP[Bulk Copy]
-    BCP --> Cloud[S3 / Blob Storage]
-    Cloud --> Load[Target Load]
-```
-
-### 23. Incremental Sync Workflow
-Keeping target in sync during long-running migrations.
-
-```mermaid
-graph LR
-    Source[Updates] --> Sync[Incremental Logic]
-    Sync --> Target[Target Sync]
-```
-
-### 24. CDC Replication Model
-Near real-time change data capture for cutover readiness.
-
-```mermaid
-graph TD
-    DB[Source] --> Logs[Transaction Logs]
-    Logs --> CDC[CDC Agent]
-    CDC --> Cloud[Target: Delta / Iceberg]
-```
-
-### 25. Near-zero Downtime Cutover
-Switching application traffic with minimal impact.
-
-```mermaid
-sequenceDiagram
-    App->>Source: Stop Writes
-    Source->>Target: Final Sync
-    App->>Target: Update Conn String
-    App->>Target: Resume Writes
-```
-
-### 26. File Migration Factory Flow
-Orchestrating petabyte-scale file transfers.
-
-```mermaid
-graph LR
-    Share[SMB Share] --> Agent[DataBox / Transfer Agent]
-    Agent --> Bucket[Cloud Bucket]
-```
-
-### 27. ETL Pipeline Migration Model
-Modernizing legacy SSIS/Informatica to dbt/Spark.
-
-```mermaid
-graph TD
-    SSIS[Legacy ETL] --> Logic[Extract Logic]
-    Logic --> dbt[Modern dbt Model]
-```
-
-### 28. Warehouse to Lakehouse Migration
-Migrating from fixed warehouses to open architectures.
-
-```mermaid
-graph LR
-    Redshift[Redshift] --> Parquet[Parquet S3]
-    Parquet --> Databricks[Databricks Delta]
-```
-
-### 29. Rollback Strategy Workflow
-Automated recovery if cutover fails.
-
-```mermaid
-graph TD
-    Fail[Migration Failed] --> Trigger[Trigger Rollback]
-    Trigger --> Point[Point-in-time Restore]
-```
-
-### 30. Hypercare Support Lifecycle
-Post-migration monitoring and stabilization.
-
-```mermaid
-graph LR
-    GoLive[Live] --> Monitor[24/7 Watch]
-    Monitor --> Handover[Operational Handover]
-```
-
-### 31. Row Count Reconciliation
-Ensuring every record arrived safely.
-
-```mermaid
-graph LR
-    S_Count[Source: 1M Rows] --> Compare[Val Engine]
-    T_Count[Target: 1M Rows] --> Compare
-```
-
-### 32. Checksum Validation Flow
-Verifying bit-for-bit data integrity.
-
-```mermaid
-graph TD
-    Source[Source Block] --> Hash[MD5/SHA]
-    Hash --> Target[Compare Target Hash]
-```
-
-### 33. Query Parity Testing
-Validating that results match across source and target.
-
-```mermaid
-graph LR
-    SQL[SELECT Sum(Rev)] --> Source[Result: 50K]
-    SQL --> Target[Result: 50K]
-```
-
-### 34. Performance Benchmark Model
-Comparing latency and throughput post-migration.
-
-```mermaid
-graph TD
-    Pre[On-Prem P99: 120ms] --> Compare[Perf Engine]
-    Post[Cloud P99: 45ms] --> Compare
-```
-
-### 35. Data Quality Rule Workflow
-Enforcing DQ standards during movement.
-
-```mermaid
-graph LR
-    Data[Record] --> Rule[Email Validator]
-    Rule -->|Fail| Quarantine[Audit Table]
-```
-
-### 36. UAT Signoff Lifecycle
-Business user validation of the new environment.
-
-```mermaid
-graph TD
-    UAT[User Testing] --> Defects[Fix Issues]
-    Defects --> Approve[Final Signoff]
-```
-
-### 37. Defect Remediation Workflow
-Managing issues found during validation.
-
-```mermaid
-graph LR
-    Bug[Mismatch Found] --> Ticket[Jira Ticket]
-    Ticket --> Fix[Sync Logic Update]
-```
-
-### 38. SLA Acceptance Model
-Verifying the target meets business SLAs.
-
-```mermaid
-graph TD
-    Target[Target System] --> Test[Load Test]
-    Test --> Pass[Meets 500ms SLA]
-```
-
-### 39. Compliance Evidence Workflow
-Gathering audit artifacts for the transition.
-
-```mermaid
-graph LR
-    Logs[Validation Logs] --> Report[SOX Evidence Package]
-```
-
-### 40. Final Go-Live Gate
-The definitive check before decommissioning source.
-
-```mermaid
-graph TD
-    Quality[DQ Check] --> Gate[Go/No-Go]
-    SLA[SLA Check] --> Gate
-    Signoff[Exec Signoff] --> Gate
-```
-
-### 41. SQL to PostgreSQL Migration
-Targeting open-source agility.
-
-```mermaid
-graph LR
-    SQL[SQL Server] --> SCT[Schema Tool]
-    SCT --> PG[PostgreSQL]
-```
-
-### 42. Oracle to Cloud Database Model
-Moving to managed SQL or Aurora.
-
-```mermaid
-graph TD
-    Oracle[Oracle RAC] --> DMS[AWS DMS / Azure Migrate]
-    DMS --> Aurora[Amazon Aurora]
-```
-
-### 43. SQL to Snowflake Flow
-Modernizing to a SaaS warehouse.
-
-```mermaid
-graph LR
-    SQL[SQL Server] --> S3[Stage in S3]
-    S3 --> Snowflake[Copy Into Snowflake]
-```
-
-### 44. SQL to Databricks Flow
-Moving to an open lakehouse.
-
-```mermaid
-graph LR
-    SQL[SQL Server] --> ADF[Data Factory]
-    ADF --> Delta[Delta Lake / Databricks]
-```
-
-### 45. SQL to BigQuery Flow
-Cloud-native analytics at scale.
-
-```mermaid
-graph LR
-    SQL[SQL Server] --> BQ_Transfer[BigQuery Data Transfer]
-    BQ_Transfer --> BQ[BigQuery]
-```
-
-### 46. SQL to Synapse Flow
-Enterprise scale on Azure.
-
-```mermaid
-graph LR
-    SQL[SQL Server] --> Polybase[Polybase / ADF]
-    Polybase --> Synapse[Synapse Pool]
-```
-
-### 47. On-prem File Share to Object Storage
-Moving unstructured data to the cloud.
-
-```mermaid
-graph TD
-    SMB[SMB Share] --> DataBox[Azure DataBox]
-    DataBox --> Blob[Azure Blob Storage]
-```
-
-### 48. Hadoop to Lakehouse Model
-Retiring complex Hadoop clusters.
-
-```mermaid
-graph LR
-    HDFS[HDFS Data] --> Distcp[DistCp / WANdisco]
-    Distcp --> Lakehouse[Cloud Lakehouse]
-```
-
-### 49. Legacy ETL to dbt Model
-Modernizing transformation logic.
-
-```mermaid
-graph TD
-    StoredProc[SQL Sproc] --> SQL_Mesh[SQL Mesh / dbt]
-    SQL_Mesh --> Gold[Gold Tables]
-```
-
-### 50. Multi-target Coexistence Model
-Running hybrid during transition.
-
-```mermaid
-graph LR
-    App[App] --> Router[Data Router]
-    Router --> Source[Legacy]
-    Router --> Target[Modern]
-```
-
-### 51. OIDC / SSO Auth Flow
-Securing the factory platform.
-
-```mermaid
-sequenceDiagram
-    User->>Portal: Login
-    Portal->>AzureAD: Auth
-    AzureAD-->>User: Token
-```
-
-### 52. RBAC Model
-Granular migration permissions.
-
-```mermaid
-graph TD
-    Role[Migration Lead] --> Grant[Full Control]
-    Role[Validator] --> Grant[Read + Validation]
-```
-
-### 53. Secrets Management Flow
-Securing credentials for source and target.
-
-```mermaid
-graph LR
-    Job[Sync Job] --> KV[Key Vault / Secret Mgr]
-```
-
-### 54. Audit Logging Architecture
-Immutable records of every row moved.
-
-```mermaid
-graph TD
-    Action[Data Move] --> Store[(Immutable Audit Log)]
-```
-
-### 55. Metrics Pipeline
-Real-time migration velocity tracking.
-
-```mermaid
-graph LR
-    Logs[Engine Logs] --> Prom[Prometheus]
-    Prom --> Grafana[Mig Board]
-```
-
-### 56. Logging Architecture
-Centralized logs for distributed workers.
-
-```mermaid
-graph TD
-    WorkerA[Azure Worker] --> Splunk[Splunk Cloud]
-    WorkerB[AWS Worker] --> Splunk
-```
-
-### 57. Tracing Model
-Tracing complex multi-step migration jobs.
-
-```mermaid
-sequenceDiagram
-    Portal->>Job: Trigger Move
-    Job->>Source: Extract
-    Job->>Target: Load
-```
-
-### 58. Executive KPI Review Cycle
-Reporting migration progress to the board.
-
-```mermaid
-graph LR
-    Stats[Migration %] --> Meeting[Weekly Exec Review]
-```
-
-### 59. Change Approval Workflow
-Managing the migration schedule.
-
-```mermaid
-graph TD
-    Req[Wave 2 Start] --> CAB[Change Advisory Board]
-    CAB --> Approved[Update Schedule]
-```
-
-### 60. Release Pipeline Workflow
-Continuous delivery of the migration platform.
-
-```mermaid
-graph LR
-    Git[Code Push] --> GHA[GitHub Actions]
-    GHA --> AKS[Deploy Engine]
+    Provision["Sync Interaction Event"] --> Stream["Forensic Stream"]
+    Stream --> Lake["Migration Metadata Lake"]
+    Lake --> Trends["Modernization Efficiency Trends"]
 ```
 
 ---
 
-## 🔬 Data Migration Factory Methodology
+## 🏛️ Core Governance Pillars
 
-### 1. The Migration Strategy Pillars
-We standardize our approach using the "Five Rs" of modernization:
-- **Rehost**: Lift-and-shift to managed infrastructure.
-- **Replatform**: Move to cloud-native database services with minimal changes.
-- **Refactor**: Modernize data structures to Delta Lake or Iceberg.
-- **Replace**: Transition from legacy ETL to SaaS analytics products.
-- **Retire**: Identifying and decommissioning redundant data assets.
-
-### 2. Validation & Reconciliation framework
-Migration without validation is just data corruption. Our platform enforces:
-- **Structural Validation**: Ensuring schemas, indexes, and constraints match.
-- **Quantitative Validation**: Bit-for-bit checksums and row count audits.
-- **Qualitative Validation**: Query parity testing against business-critical reports.
+1.  **Unified Foundation Coordination**: Maximizing resilience by centralizing all modernization measurement through a single institutional plane.
+2.  **Automated Migration Provisioning**: Eliminating "manual cutover" scenarios through proactive orchestration and pattern verification.
+3.  **Sequential Wave Intelligence**: Ensuring zero-interruption operations through dependency-aware wave-driven modernization engineering.
+4.  **Zero-Trust Data Protection**: Automatically enforcing identity-based access, data-at-rest encryption, and policy evaluation across all migration tiers.
+5.  **Autonomous Operations Logic**: Guaranteeing reliability through automated industry-specific modernization monitoring runbooks.
+6.  **Full Migration Auditability**: Immutable recording of every sync change and migration provision for institutional forensics.
 
 ---
 
-## 🚦 Getting Started
+## 🛠️ Technical Stack & Implementation
 
-### 1. Prerequisites
-- **Terraform** (v1.5+).
-- **Docker Desktop**.
-- **Azure/AWS/GCP CLI** configured.
+### Modernization Engine & APIs
+*   **Framework**: Python 3.11+ / FastAPI.
+*   **Performance Engine**: Custom Python-based logic for multi-cloud source ingestion and DORA-style migration metrics.
+*   **Integrations**: Native connectors for SQL Server, Oracle, Snowflake, Databricks, and Fabric APIs.
+*   **Persistence**: PostgreSQL (Migration Ledger) and Redis (Live Sync State).
+*   **Auth Orchestrator**: Federated OIDC/SAML for least-privilege migration management access.
 
-### 2. Local Setup
+### Governance Dashboard (UI)
+*   **Framework**: React 18 / Vite.
+*   **Theme**: Dark, Slate, Indigo (Modern high-fidelity modernization aesthetic).
+*   **Visualization**: D3.js for migration topologies and Recharts for readiness velocity analytics.
+
+### Infrastructure & DevOps
+*   **Runtime**: AWS EKS or Azure Kubernetes Service (AKS) for management plane.
+*   **Migration Hub**: Managed event sourcing for immutable modernization timeline reconstruction.
+*   **IaC**: Modular Terraform for deploying the migration landing zone and validation fleet.
+
+---
+
+## 🏗️ IaC Mapping (Module Structure)
+
+| Module | Purpose | Real Services |
+| :--- | :--- | :--- |
+| **`infrastructure/migration_hub`** | Central management plane | EKS, PostgreSQL, Redis |
+| **`infrastructure/enforcers`** | Distributed migration provisioners | Azure, AWS, GCP APIs |
+| **`infrastructure/sync_pipes`** | Data Ingestion Hubs | Webhooks, Lambda |
+| **`infrastructure/auditing`** | Forensic modernization sinks | S3, Athena, Quicksight |
+
+---
+
+## 🚀 Deployment Guide
+
+### Local Principal Environment
 ```bash
-# Clone the repository
-git clone https://github.com/Devopstrio/data-migration-factory.git
+# Clone the Data Migration Factory repository
+git clone https://github.com/devopstrio/data-migration-factory.git
 cd data-migration-factory
 
-# Start the Migration Control Plane
-docker-compose up --build
+# Configure environment
+cp .env.example .env
+
+# Launch the Modernization stack
+make init
+
+# Trigger a mock migration update and automated readiness validation simulation
+make simulate-migration
 ```
-Access the Factory Portal at `http://localhost:3000`.
+
+Access the Management Portal at `http://localhost:3000`.
 
 ---
 
-## 🛡️ Governance & Security
-- **Encryption at Flight**: All migration traffic is encrypted via TLS 1.3 and private peering (ExpressRoute/Direct Connect).
-- **Immutable Auditability**: Every data movement, user action, and validation result is recorded in an immutable audit store.
-- **Zero-Trust Migration**: Source and target credentials are never stored locally and are managed via enterprise secret managers.
+## 📜 License
+Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
-<sub>&copy; 2026 Devopstrio &mdash; Engineering the Future of Industrialized Cloud Modernization.</sub>
+<div align="center">
+  <p>© 2026 Devopstrio. All rights reserved.</p>
+</div>
